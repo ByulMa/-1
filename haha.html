@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- https://developer.mozilla.org/ko/docs/Web/HTML/Reference html 리퍼런스 -->
+  <!-- https://developer.mozilla.org/ko/docs/Web/HTML/Reference html 리퍼런스 -->
 
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Document</title>
 
-    <meta name="description" content="이건노마드용">
+    <meta name="description" content="이건노마드용" />
+  </head>
 
+  <body>
+    <form>
+      <!-- label for과 input에 부여된 id가 같아야 연결이 됩니다 -->
+      <label for="이미지">이미지를 넣어주세요</label>
 
-
-
-</head>
-
-
-
-
-<body>
-        <form>  
-        <label for="이미지">이미지를 넣어주세요</label>
-        
-        <input type="file" accept="image/*" id="이미지">
-        
-        <input type="text" required placeholder="Last name">
-        <input type="text" required placeholder="name">
-        <input type="text" required placeholder="Id">
-        <input type="password" required minlength="3" placeholder="Password"> <br>
-        <input type="submit"required value="그림"> 
-        
-    <label>
-        이름: <input type="submitted-name" autocomplete="name">
-    </label>
-    <button>저장</button>
-
-    <label for="체크박스">이게 마음에 드시나요?</label>
-    <input id="체크박스" type="checkbox">
-        
-
-
-</form>
-
-
-
-
-
-    
-</body>
+      <input type="file" accept="image/*" id="이미지" />
+      <div>
+        <input type="text" required placeholder="Last name" />
+        <input type="text" required placeholder="name" />
+        <input type="text" required placeholder="Id" />
+        <input type="password" required minlength="3" placeholder="Password" />
+        <br />
+      </div>
+      <input type="submit" required value="그림" />
+      <div>
+        <label>
+          이름: <input type="submitted-name" autocomplete="name" />
+        </label>
+        <button>저장</button>
+      </div>
+      <label for="체크박스">이게 마음에 드시나요?</label>
+      <input id="체크박스" type="checkbox" />
+    </form>
+  </body>
 </html>

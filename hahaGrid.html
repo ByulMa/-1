@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <!-- https://heropy.blog/2019/08/17/css-grid/ css완벽 가이드! -->
+  <!-- https://studiomeal.com/archives/533 생활 코딩 Grid!! -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>그리드 배워봅시당</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, auto));
+        grid-template-rows: repeat(3, minmax(150px, auto));
+        grid-template-areas:
+          "header header aside"
+          "main main aside"
+          "footer footer tkr";
+        gap: 50px, 50px;
+      }
+      header {
+        background-color: greenyellow;
+        border: 2px green solid;
+        grid-area: header;
+      }
+      main {
+        background-color: skyblue;
+        border: 2px aqua solid;
+        grid-area: main;
+      }
+      aside {
+        background-color: goldenrod;
+        border: 2px blue solid;
+        grid-area: aside;
+      }
+      footer {
+        background-color: mediumslateblue;
+        border: 2px red solid;
+        grid-area: footer;
+      }
+
+      .item {
+        border: black solid 2px;
+        background-color: salmon;
+        grid-area: tkr;
+      }
+    </style>
+
+    <meta name="description" content="이건노마드용2" />
+  </head>
+
+  <body>
+    <!-- 뭉텅이들을 묶어서 정의해줍니다 -->
+    <div class="container">
+      <header class="header">Header</header>
+      <main class="main">Main</main>
+      <aside class="aside">Aside</aside>
+      <footer class="footer">Footer</footer>
+      <div class="item">1</div>
+    </div>
+  </body>
+</html>
