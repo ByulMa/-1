@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>form 제작해보기!</title>
+
+    <meta name="description" content="이건노마드용2" />
+    <style></style>
+  </head>
+  <body>
+    <h1>Create An Account</h1>
+    <form>
+      <!-- form은 데이터를 보내야할 틀이기 때문에 꼭 써줍시당 -->
+      <div>
+        <!-- label의 for은 type의 id와 연동시키자 -->
+        <label for="first name">First Name</label>
+        <input type="text" id="first name" placeholder="First name" required />
+      </div>
+      <div>
+        <label for="last name">Last name </label>
+        <input type="text" id="last name" placeholder="Last name" required />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email" required />
+      </div>
+      <div>
+        <label for="user name">User name</label>
+        <input type="text" id="user name" placeholder="User name" required />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          minlength="10"
+          required
+        />
+      </div>
+      <div>
+        <label for="birthdate">Birth date</label>
+        <input type="date" id="birthdate" placeholder="Birth date" required />
+      </div>
+
+      <div>
+        <label for="sadness">얼마나 슬프신가요?</label>
+        <!-- step은 간격  -->
+        <input
+          type="range"
+          id="sadness"
+          min="0"
+          max="10"
+          step="1"
+          list="tickmark"
+          required
+        />
+        <!-- list 속성에 datalist id와 같은 값을 넣어주면 둘이 연동된다! -->
+        <datalist id="tickmark">
+          <!-- id를 먹이자 -->
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5"></option>
+          <option value="6"></option>
+          <option value="7"></option>
+          <option value="8"></option>
+          <option value="9"></option>
+          <option value="10"></option>
+        </datalist>
+      </div>
+      <div>
+        <label for="color">무슨 색을 좋아하시나요?</label>
+        <input type="color" id="color" required />
+      </div>
+      <button type="submit">아이디를 만들어봅시당</button>
+      <!-- <input type="submit" value=".."> 가능하지만 button type을 활용하면
+      버튼 안에 추가적인 속성들을 내 마음대로 넣을 수 있다 ex:img,span 글귀분리 등등 -->
+    </form>
+  </body>
+</html>
