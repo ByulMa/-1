@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: beige;
+        margin: 0px;
+      }
+      h1 {
+        text-align: center;
+        height: 5vh;
+      }
+      #container {
+        width: 32vw;
+        margin: auto auto;
+        height: 95vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .container2 {
+        width: 15vw;
+        height: 42vh;
+        border: 5px white solid;
+      }
+      #container .container2:nth-child(1) {
+        background-color: #ff6367;
+      }
+      #container .container2:nth-child(2) {
+        background-color: #008080;
+      }
+
+      #container .container2:nth-child(3) {
+        background-color: #deb887;
+      }
+      #container .container2:nth-child(4) {
+        background-color: #d7bfd7;
+      }
+      .whitebox {
+        width: 100%;
+        height: 25%;
+        background-color: white;
+        position: relative;
+        top: 10%;
+      }
+
+      h3 {
+        padding-top: 5%;
+      }
+      h3 + span {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>최고의 색깔</h1>
+    <div id="container">
+      <div class="container2">
+        <div class="whitebox">
+          <h3>Tomato</h3>
+          <span>#ff6367</span>
+        </div>
+      </div>
+
+      <div class="container2">
+        <div class="whitebox">
+          <h3>Teal</h3>
+          <span>#008080</span>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="whitebox">
+          <h3>Burlywood</h3>
+          <span>#deb887</span>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="whitebox">
+          <h3>thistle</h3>
+          <span>#d7bfd7</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
