@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      @keyframes HAHA {
+        0% {
+          transform: rotateZ(0deg) translateX(100px) scale(1);
+        }
+
+        50% {
+          transform: rotateZ(90deg) scale(1.5);
+          opacity: 0;
+        } /* 0~1까지 있는 OPACITY */
+
+        100% {
+          transform: rotateZ(0deg) translateX(0px) scale(1);
+          border: orange 10px solid;
+          border-radius: 50%;
+        }
+      }
+
+      @media screen and (min-width: 0px) and (max-width: 1000px) {
+        img {
+          border: 6px green solid;
+        }
+      }
+      @media screen and (orientation: landscape) {
+        body {
+          display: none;
+        }
+      }
+      /* 데스크탑에서도 가로가 세로보다 크면 landscape 취급 portrait 취급*/
+      img {
+        animation: HAHA 2s infinite alternate;
+      }
+
+      img:hover {
+        border: 6px solid tomato;
+      } /* animation 중인 이미지는 Hover 되지 않는다? */
+    </style>
+  </head>
+  <body>
+    <img src="eclipse.jpg" />
+  </body>
+</html>
