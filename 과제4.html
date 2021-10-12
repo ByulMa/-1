@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+
+    <style>
+      @keyframes gaza2 {
+        0% {
+          transform: scaleY(1);
+        }
+
+        50% {
+          transform: scaleY(2);
+        }
+        100% {
+          transform: scaleY(1);
+        }
+      }
+
+      #container1 {
+        background-color: beige;
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #container2 {
+        background-color: beige;
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .dolza {
+        background-color: black;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        opacity: 0.6;
+        margin: 0 35px;
+      }
+      .stakato:nth-child(1) {
+        background-color: brown;
+        width: 50px;
+        height: 300px;
+        margin: 0 5px;
+        animation: gaza2 1s ease-in-out 0s, 4s infinite;
+      }
+      .stakato:nth-child(2) {
+        background-color: brown;
+        width: 50px;
+        height: 300px;
+        margin: 0 5px;
+        animation: gaza2 1s ease-in-out 0.5s, 4s infinite;
+      }
+      .stakato:nth-child(3) {
+        background-color: brown;
+        width: 50px;
+        height: 300px;
+        margin: 0 5px;
+        animation: gaza2 1s ease-in-out 1s, 4s infinite;
+      }
+      .stakato:nth-child(4) {
+        background-color: brown;
+        width: 50px;
+        height: 300px;
+        margin: 0 5px;
+        animation: gaza2 1s ease-in-out 1.5s, 4s infinite;
+      }
+      .stakato:nth-child(5) {
+        background-color: brown;
+        width: 50px;
+        height: 300px;
+        margin: 0 5px;
+        animation: gaza2 1s ease-in-out 2s, 4s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container1">
+      <div class="dolza"></div>
+      <div class="dolza"></div>
+      <div class="dolza"></div>
+    </div>
+    <div id="container2">
+      <div class="stakato"></div>
+      <div class="stakato"></div>
+      <div class="stakato"></div>
+      <div class="stakato"></div>
+      <div class="stakato"></div>
+    </div>
+  </body>
+</html>
